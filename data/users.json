@@ -1,0 +1,27 @@
+[{
+    "_id": "64e6e1baf1e4b4a46d9e07f1",
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma@example.com",
+    "role": "user",
+    "active": true,
+    "photo": "user-1.jpg",
+    "password": "test1234"
+  },
+  {
+    "_id": "64e6e1baf1e4b4a46d9e07f2",
+    "name": "Sita Rai",
+    "email": "sita.rai@example.com",
+    "role": "guide",
+    "active": true,
+    "photo": "user-2.jpg",
+    "password": "test1234"
+  },
+  {
+    "_id": "64e6e1baf1e4b4a46d9e07f3",
+    "name": "Ravi Kumar",
+    "email": "ravi.kumar@example.com",
+    "role": "lead-guide",
+    "active": true,
+    "photo": "user-3.jpg",
+    "password": "test1234"
+  }]
