@@ -10,14 +10,18 @@ const __dirname = dirname(__filename);
 
 // Connect to MongoDB
 mongoose
-  .connect(`mongodb+srv://Biplov:mrcool10@cluster0.qbbmn.mongodb.net/Banking_System?retryWrites=true&w=majority&appName=Cluster0`)
+  .connect(
+    `mongodb+srv://Biplov:<PASSWORD>@cluster0.qbbmn.mongodb.net/Banking_System?retryWrites=true&w=majority&appName=Cluster0`
+  )
   .then(() => console.log("Connected successfully to the database"))
   .catch((err) => console.error("Database connection error:", err));
 
 // Function to import data from JSON file
 const importData = async () => {
   try {
-    const data = JSON.parse(await fs.readFile(`${__dirname}/users.json`, "utf-8"));
+    const data = JSON.parse(
+      await fs.readFile(`${__dirname}/users.json`, "utf-8")
+    );
     await User.create(data, { validateBeforeSave: false });
     console.log("Data successfully imported");
   } catch (err) {
@@ -41,5 +45,7 @@ if (process.argv[2] === "--import") {
 } else if (process.argv[2] === "--delete") {
   truncateData();
 } else {
-  console.log("Invalid command. Use --import to import data or --delete to delete data.");
+  console.log(
+    "Invalid command. Use --import to import data or --delete to delete data."
+  );
 }
