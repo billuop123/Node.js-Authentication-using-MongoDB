@@ -15,9 +15,9 @@ A user authentication system built with Node.js and MongoDB, providing secure re
 - MongoDB
 - bcrypt
 - jsonwebtoken
-**Usage**
+## Usage
   npm start
-**CONFIGURATION**
+## CONFIGURATION
 DATABASE=mongodb+srv://Biplov:<db_password>@cluster0.qbbmn.mongodb.net/Banking_System?retryWrites=true&w=majority&appName=Cluster0
 DATABASE_PASSWORD=password
 PORT=9000
