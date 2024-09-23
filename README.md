@@ -8,7 +8,8 @@ A user authentication system built with Node.js and MongoDB, providing secure re
 - Password hashing for security
 - JWT-based authentication for session management
 - Example environment configuration provided
-
+## API documnetation
+  -https://documenter.getpostman.com/view/30352568/2sAXqv4LWs
 ## Technologies Used
 - Node.js
 - Express
@@ -16,7 +17,7 @@ A user authentication system built with Node.js and MongoDB, providing secure re
 - bcrypt
 - jsonwebtoken
 ## Usage
-  npm start
+  -npm start
 ## CONFIGURATION
 DATABASE=mongodb+srv://Biplov:<db_password>@cluster0.qbbmn.mongodb.net/Banking_System?retryWrites=true&w=majority&appName=Cluster0
 DATABASE_PASSWORD=password
