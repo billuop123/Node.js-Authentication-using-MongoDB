@@ -19,10 +19,10 @@ A user authentication system built with Node.js and MongoDB, providing secure re
 ## Usage
   -npm start
 ## CONFIGURATION
-DATABASE=mongodb+srv://Biplov:<db_password>@cluster0.qbbmn.mongodb.net/Banking_System?retryWrites=true&w=majority&appName=Cluster0
-DATABASE_PASSWORD=password
-PORT=9000
-NODE_ENV='development'
-SECRETKEY=BILLU-SECRET-NEEDS-TO-BE-LONG
-EXPIRESIN=90d
-COOKIE_EXPIRES_IN=90
+-DATABASE=mongodb+srv://Biplov:<db_password>@cluster0.qbbmn.mongodb.net/Banking_System?retryWrites=true&w=majority&appName=Cluster0
+-DATABASE_PASSWORD=password
+-PORT=9000
+-NODE_ENV='development'
+-SECRETKEY=BILLU-SECRET-NEEDS-TO-BE-LONG
+-EXPIRESIN=90d
+-COOKIE_EXPIRES_IN=90
