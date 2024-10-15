@@ -47,7 +47,7 @@ const login = catchAsync(async (req, res, next) => {
     return next(new AppError("There is no such user", 400));
   }
 
-  if (!user.correctPassword(req.body.password, user.password)) {
+  if (await !user.correctPassword(req.body.password, user.password)) {
     return next(new AppError("Incorrect email or password"), 400);
   }
 
