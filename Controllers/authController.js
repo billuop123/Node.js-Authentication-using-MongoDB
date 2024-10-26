@@ -47,8 +47,9 @@ const login = catchAsync(async (req, res, next) => {
     return next(new AppError("There is no such user", 400));
   }
 
-  if (await !user.correctPassword(req.body.password, user.password)) {
-    return next(new AppError("Incorrect email or password"), 400);
+  // Corrected line here
+  if (!(await user.correctPassword(req.body.password, user.password))) {
+    return next(new AppError("Incorrect email or password", 400));
   }
 
   createCookieAndSendToken(user, 200, res);
